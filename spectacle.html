@@ -8,13 +8,13 @@
         content="L'association « FoiR UNITED » a été créée en 2023 pour reprendre le flambeau de l’association « FoiR » qui a œuvré depuis 2003 à développer et faire découvrir le théâtre d’improvisation dans le canton de Fribourg."
         name="description">
     <meta
-        content="foir united fribourg improvisation impro théâtre spectacle matchs bidule suisse"
+        content="foir united fribourg impro improvisation théâtre spectacle match bidule suisse"
         name="keywords">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 		<link href="stylesheets/sticky-footer.css" rel="stylesheet">
-
+    <link href="stylesheets/map-libre-gl-js.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 	</head>
 	<body id="page-top">
@@ -45,17 +45,21 @@
             <div class="col-lg-6 ">
       
               <div class="card-body">
-              <h1 class="display-5 fw-bold lh-1 mt-4 ">Match - Impro B!dule vs Loveboat</h1>
-                <h5 class="card-text">13 janvier 2024</h5>
-                <h6 class="card-text">20h00, ouverture des portes à 19h30</h6>
-                <h6 class="card-text">Durée : env. 1h45 (avec entracte)</h6>
-                <h6 class="card-text">10 frs prix d'entrée - 5 frs prix Etudiant/AVS/AI/Chômage</h6>
-                <h6 class="card-text">Aula du Collège St Michel, Rue Saint-Pierre Canisius 10, 1700 Fribourg</h6>
+                <h1 class="display-5 fw-bold lh-1 mt-4 ">Match - ImproB!dule vs Loveboat</h1>
+                <h5 class="card-text"><i class="bi bi-calendar-heart"></i> 13 janvier 2024</h5>
+                <h6 class="card-text"><i class="bi bi-clock"></i> 20h00</h6>
+                <h6 class="card-text"><i class="bi bi-door-open"></i> Ouverture des portes à 19h30</h6>
+                <h6 class="card-text"><i class="bi bi-clock-history"></i> Durée : env. 1h45 (avec entracte)</h6>
+                <h6 class="card-text"><i class="bi bi-coin"></i> 10 frs prix d'entrée - 5 frs prix Etudiant/AVS/AI/Chômage</h6>
+                <h6 class="card-text"><i class="bi bi-geo-alt"></i> Aula du Collège St Michel, <a href="https://maps.app.goo.gl/JAQPUaWhcRP4Bi6HA">Rue Saint-Pierre Canisius 10, 1700 Fribourg</a></h6>
                 <p class="card-text">Nouvelle année, nouvelle troupe, nouvelle équipe! Impro B!dule vous propose un match d'improvisation théâtrale contre la troupe Loveboat.</p>
               </div>
+              
             </div>
-            <div class="col-lg-6"><img class="img-fluid rounded" src="/images/match.jpg" alt="Une photo de la troupe" /></div>
-          </div>
+            <div class="col-lg-6">
+              <img class="img-fluid rounded" src="/images/match.jpg" alt="Une photo de la troupe" />
+              <div id="map" style='width: 100%; height: 300px;'></div>
+            </div>
         </div>
       </section>
 
@@ -65,20 +69,35 @@
           <div class="row gx-4 gx-lg-5 py-lg-3 align-items-center">
               <p class="lead">Vous pouvez vous inscrire en suivant <a href="https://framaforms.org/match-impro-bdule-vs-loveboat-13-janvier-2024-20h00-1704454670" target="_blank">ce lien</a></p>
               <p class="lead">Pour des groupes de plus de 10 personnes, merci de nous contacter par email. (<a href=mailto:presidence@impro-fribourg.ch>presidence@impro-fribourg.ch</a>)</p>
-            </div>
           </div>
         </div>
       </section>
       <!-- End Body -->
-      <!-- Footer -->
-      <footer class="footer navbar-dark bg-dark">
-        <div class="container">
-          <span class="navbar-nav ms-auto">2023-2024 FoiR UNITED</span>
-        </div>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-      <!-- End Footer -->
-		</div>
   </body>
+  <!-- Footer -->
+  <footer class="footer navbar-dark bg-dark">
+    <div class="container">
+      <span class="navbar-nav ms-auto">2023-2024 FoiR UNITED </span> 
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="javascripts/map-libre-gl-js.js"></script>
+  <script>
+    var map = new maplibregl.Map({
+        container: 'map', // container id
+        style: 'https://vectortiles.geo.admin.ch/styles/ch.swisstopo.leichte-basiskarte_world.vt/style.json', // style URL
+        center: [7.15784, 46.80708], // starting position [lng, lat]
+        zoom: 13 // starting zoom
+    });
+
+    // add the marker to the map
+    var marker = new maplibregl.Marker({
+      color: "#e53935",
+    })
+    .setLngLat([7.15784, 46.80708])
+    .addTo(map);
+</script>
+
+  <!-- End Footer -->
 </html>
