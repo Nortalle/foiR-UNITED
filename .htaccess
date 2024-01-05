@@ -4,3 +4,28 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
 # SECTION BEGIN GIT PROTECTION
 RedirectMatch 404 /\.git
 # SECTION END GIT PROTECTION
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+ 
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+ 
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+   </IfModule>
+   
+   <IfModule mod_expires.c>
+    ExpiresActive on
+ 
+    ExpiresByType text/css "access plus 1 month"
+ </IfModule>
+ 
+RewriteCond %{HTTP_HOST} ^www\.impro-fribourg\.ch$
+RewriteRule ^/?$ "http\:\/\/impro-fribourg\.ch\/" [R=301,L]
