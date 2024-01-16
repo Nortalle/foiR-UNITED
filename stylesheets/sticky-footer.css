@@ -8,9 +8,12 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-	background-color: #2e3192;
-	color: #fff200 ;
+	background-color: #141527;
+	color: #faeaa9 ;
 }
+
+/* #141527 #2e3192
+#faeaa9 #fff200 */
 
 body::before {
 	content: "";
@@ -31,12 +34,12 @@ body::before {
 }
 
 .card {
-	background-color: #2e3192;
-	color: #fff200 ;
+	background-color: #141527;
+	color: #faeaa9 ;
 }
 
 .yellow {
-	color: #fff200 ;
+	color: #faeaa9 ;
 }
 
 .rose {
@@ -46,7 +49,7 @@ body::before {
 }
 
 .rose:hover {
-	color: #2e3192 ;
+	color: #141527 ;
 	background-color: #ec008c ;
 	border-color: #ec008c ;
 	outline-color: #ec008c;
@@ -59,7 +62,7 @@ body::before {
 }
 
 span {
-	color: #fff200 ;
+	color: #faeaa9 ;
 }
 
 a {
