@@ -1,5 +1,5 @@
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.box-shadow { box-shadow: .25rem .25rem .25rem .75rem rgba(250, 234, 169, .05); }
 
 html {
   position: relative;
@@ -11,6 +11,8 @@ body {
 	background-color: #141527;
 	color: #faeaa9 ;
 }
+
+
 
 /* #141527 #2e3192
 #faeaa9 #fff200 */
