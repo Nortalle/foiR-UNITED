@@ -21,8 +21,6 @@ function addParametersToLinks() {
   // Récupérer les paramètres d'URL
   var originValue = getUrlParameter('origin');
 
-  console.log(originValue + " AAAAAAAAA");
-
   // Parcourir tous les liens et ajouter les paramètres d'URL
   for (var i = 0; originValue !== "" && i < links.length; i++) {
       var href = links[i].getAttribute('href');
