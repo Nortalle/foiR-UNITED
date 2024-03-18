@@ -3,31 +3,31 @@
 	<url>
 		<loc>https://www.impro-fribourg.ch</loc>
 		<priority>1.00</priority>
-		<lastmod>2024-01-24</lastmod>
-	</url>
-	<url>
-		<loc>https://www.impro-fribourg.ch/havre.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-01-24</lastmod>
-	</url>
-	<url>
-		<loc>https://www.impro-fribourg.ch/test.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-01-10</lastmod>
+		<lastmod>2024-03-18</lastmod>
 	</url>
 	<url>
 		<loc>https://www.impro-fribourg.ch/agenda.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-01-24</lastmod>
+		<priority>0.67</priority>
+		<lastmod>2024-03-18</lastmod>
 	</url>
 	<url>
-		<loc>https://www.impro-fribourg.ch/spectacle.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-01-24</lastmod>
+		<loc>https://www.impro-fribourg.ch/events/2023-12-16-havre.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-18</lastmod>
 	</url>
 	<url>
-		<loc>https://www.impro-fribourg.ch/spectacle2.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2024-01-24</lastmod>
+		<loc>https://www.impro-fribourg.ch/events/2024-01-13-spectacle.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-18</lastmod>
+	</url>
+	<url>
+		<loc>https://www.impro-fribourg.ch/events/2024-02-24-spectacle.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-18</lastmod>
+	</url>
+	<url>
+		<loc>https://www.impro-fribourg.ch/events/2024-04-13-impro-catch.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-18</lastmod>
 	</url>
 </urlset>
