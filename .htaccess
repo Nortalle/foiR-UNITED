@@ -29,3 +29,4 @@ RedirectMatch 404 /\.git
  
 RewriteCond %{HTTP_HOST} ^www\.impro-fribourg\.ch$
 RewriteRule ^/?$ "http\:\/\/impro-fribourg\.ch\/" [R=301,L]
+Redirect 301 /billetterie /billetterie.html
